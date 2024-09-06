@@ -37,6 +37,79 @@ if (isset($_GET['delete'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vyhledávání</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: "pacifico";
+            src: url("./Pacifico.ttf");
+        }
+
+        @font-face {
+            font-family: "caveat";
+            src: url("./Caveat.ttf");
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f1ea;
+            color: #333;
+        }
+
+        h2 {
+            font-family: "pacifico";
+        }
+
+        .navbar {
+            background-color: #5a3e2b;
+
+            color: black !important;
+            font-family: "pacifico";
+
+        }
+
+        a.nav-link:hover {
+            font-weight: bold !important;
+
+        }
+
+        .container-fluid {
+            background-color: #d4c2a5;
+        }
+
+        .table {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            width: 95%;
+            text-align: center;
+            vertical-align: middle;
+            font-family: monospace;
+            font-weight: bolder;
+        }
+
+        .table th {
+            background-color: #f4e3d7;
+            color: #5a3e2b;
+        }
+
+        .table td {
+            border: 1px solid #ddd;
+        }
+
+        .btn-danger {
+            background-color: #9c3b30;
+            border: none;
+        }
+
+        .btn-danger:hover {
+            background-color: #ba4b3c;
+        }
+    </style>
 </head>
 
 <body>
@@ -63,6 +136,7 @@ if (isset($_GET['delete'])) {
     </nav>
     <div class="container">
         <h2 class="h2">Vyhledávání</h2>
+        <p></p>
         <form action="look.php" method="get">
             <input class="form-control my-2" name="lastname" type="text" placeholder="Zadejte příjmení autora" />
             <input class="form-control my-2" name="firstname" type="text" placeholder="Zadejte jméno autora" />
